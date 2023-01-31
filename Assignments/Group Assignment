@@ -1,0 +1,87 @@
+public class Phone {
+
+    private String brand; 
+
+    private String unit;
+
+    private String storage; 
+
+    private int price; 
+
+    
+
+    public Phone(){
+
+        this.brand = "Apple";
+
+        this.unit = "iPhone 14 Pro Max";
+
+        this.storage = "1TB";
+
+        this.price = 109990;
+
+    }
+
+    public String getBrand(){
+
+        return brand;
+
+    }
+
+    public String getUnit(){
+
+        return unit;
+
+    }
+
+    public String getStorage(){
+
+        return storage;
+
+    }
+
+    public int getPrice(){
+
+        return price;
+
+    }
+
+    public void setBrand(String brand){
+
+        this.brand = brand; 
+
+    }  
+
+    public void setUnit(String unit){
+
+        this.unit = unit;
+
+    }   
+
+    public void setStorage(String storage){
+
+        this.storage = storage;
+
+    }
+
+    public void setPrice(int price){
+
+        this.price = price;
+
+    }
+
+    public void quality(){
+
+        System.out.println("My " + this.unit + " that I got from " + this.brand + " for " + this.price + " has long lasting battery, good camera quality, and aesthetically pleasing looks.");
+
+    }
+
+    public static void main(String [] args){
+
+        Phone p = new Phone();
+
+        p.quality();
+
+    }
+
+}
